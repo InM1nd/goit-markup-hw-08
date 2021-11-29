@@ -1244,10 +1244,6 @@ img {
   }
 }
 
-.team__list .team__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team__title {
   margin-bottom: 50px;
   text-align: center;
