@@ -1,0 +1,43 @@
+.advantage{
+
+&__list {
+    display: flex;
+  }
+  
+  &__card {
+    width: 270px;
+  }
+  &__card:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  &__img {
+    display: flex;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding: 25px 0;
+  }
+  
+  &__card-title {
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+  
+  
+  &__card-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-top: 10px;
+  }
+
+}

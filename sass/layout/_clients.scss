@@ -1,0 +1,49 @@
+.clients{
+
+  &__title {
+    margin-bottom: 50px;
+  }
+  
+  &__list {
+    display: flex;
+  }
+  
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-size: auto;
+    background-repeat: no-repeat;
+  
+    width: 170px;
+    height: 92px;
+  
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__list &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  &__card:hover,
+  &__card:focus {
+    border-color: var(--accent-color);
+  }
+  
+  &__card:hover &__icon,
+  &__card:focus &__icon {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+}
