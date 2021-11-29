@@ -1,21 +1,30 @@
 .about {
     padding-top: 0;
+    
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+}
   
-  
-  &__list {
+.about__list {
     display: flex;
     margin-top: 50px;
-  }
+
+    & .about__item:not(:last-child) {
+      margin-right: 30px;
+    }
+}
   
-  &__list &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+
   
-  &__item {
+.about__item {
     position: relative;
   }
   
-  &__text {
+.about__text {
+
+    overflow: hidden;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,5 +45,5 @@
     bottom: 0;
   }
 
-}
+
   
